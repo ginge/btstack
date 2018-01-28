@@ -54,10 +54,10 @@
 // #include "hal_time_ms.h"
 uint32_t hal_time_ms(void);
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "freertos/queue.h"
-#include "freertos/event_groups.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "event_groups.h"
 
 typedef struct function_call {
     void (*fn)(void * arg);
